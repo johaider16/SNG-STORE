@@ -1,0 +1,309 @@
+/* Estilos para el nav */
+nav {
+    background-color: black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+nav ul li {
+    display: inline;
+    position: relative; /* Necesario para posicionar el menú desplegable */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para el dropdown (categorías) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+/* Estilos adicionales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Sección de bienvenida con imagen de fondo */
+.bienvenida {
+    background-image: url('portada.PNG'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* La imagen cubrirá toda la sección */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    position: relative; /* Permite usar la superposición del fondo */
+    text-align: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Superposición transparente */
+.bienvenida::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    z-index: 1; /* Aparece por encima de la imagen */
+}
+
+.bienvenida h1, .bienvenida p {
+    position: relative; /* Se asegura que el texto esté por encima del fondo */
+    z-index: 2; /* Coloca el texto sobre la superposición */
+    color: white; /* Color blanco para el texto */
+}
+
+.bienvenida h1 {
+    font-size: 72px; /* Texto grande */
+    margin: 0;
+    font-weight: bold;
+}
+
+.bienvenida p {
+    font-size: 36px; /* Texto grande */
+    margin: 20px 0;
+    color: #ccc; /* Texto gris claro */
+}
+
+.products {
+    justify-content: space-around;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#cart-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.remove-item {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.checkout {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+}
+
+#confirmation-message {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: green;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: black; /* Fondo oscuro */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info, .footer-social {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-info h3, .footer-social h3  {
+    border-bottom: 2px solid #fff; /* Línea debajo del título */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social a {
+    margin: 5px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info, .footer-social {
+        text-align: center;
+    }
+}
+
+.footer-otro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-otro a {
+    margin: 5px;
+}
+
+.footer-otro img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-otro h3 {
+    border-bottom: 2px solid #fff; /* Línea debajo del título */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+.footer-logo img{
+    width: 100px;
+    margin: 20px 0px 0 100px;
+    
+}
+
+.titulo{
+    text-align: left;
+}
+
+.imagenes{
+    width: 190px;
+    height: 200px;
+}

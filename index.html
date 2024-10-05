@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tienda Virtual de SNG STORE</title>
+    <link rel="stylesheet" href= "index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <a href="logo.PNG"><img src="logo.PNG" alt="Logo de la Tienda"></a>
+        </div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+
+            
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Categorías</a>
+                <div class="dropdown-content">
+                    <a href="hombre.html">Hombres</a>
+                    <a href="mujeres.html">Mujeres</a>
+                    <a href="futbol.html">Futbol</a>
+                    <a href="calzado.html">Calzado</a>
+                </div>
+            </li>
+
+            <li><a href="#productos">Productos</a></li> <!-- Enlace a la sección de productos -->
+            <li><a href="oferta.html">Ofertas</a></li>
+            <li><a href="#contactos">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <section class="bienvenida">
+        <h1>¡Bienvenidos a SNG STORE Tienda de Ropa!</h1>
+        <p>Ropa, tenis y accesorios de la mejor calidad en SNG STORE con los mejores precios!!!!</p>
+    </section>
+
+    <h2 class="titulo">Productos</h2>
+
+    <div class="products" id="productos">
+        <div class="product">
+            <img src="camisa.PNG" alt="" class="imagenes">
+            <h3>Producto 1</h3>
+            <p>Precio: $10</p>
+            <button class="add-to-cart" data-name="Producto 1" data-price="10">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="producto2.PNG" alt="" class="imagenes">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+            <button class="add-to-cart" data-name="Producto 2" data-price="15">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="producto3.PNG" alt="" class="imagenes">
+            <h3>Producto 3</h3>
+            <p>Precio: $20</p>
+            <button class="add-to-cart" data-name="Producto 3" data-price="20">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="products" id="productos">
+        <div class="product">
+            <img src="guayo.PNG" alt="" class="imagenes">
+            <h3>Producto 1</h3>
+            <p>Precio: $10</p>
+            <button class="add-to-cart" data-name="Producto 4" data-price="10">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="sandalia.PNG" alt="" class="imagenes">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+            <button class="add-to-cart" data-name="Producto 5" data-price="15">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="peto.PNG" alt="" class="imagenes">
+            <h3>Producto 3</h3>
+            <p>Precio: $20</p>
+            <button class="add-to-cart" data-name="Producto 6" data-price="20">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="products" id="productos">
+        <div class="product">
+            <img src="teni1.PNG" alt="" class="imagenes">
+            <h3>Producto 1</h3>
+            <p>Precio: $10</p>
+            <button class="add-to-cart" data-name="Producto 7" data-price="10">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="teni2.PNG" alt="" class="imagenes">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+            <button class="add-to-cart" data-name="Producto 8" data-price="15">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="teni3.PNG" alt="" class="imagenes">
+            <h3>Producto 3</h3>
+            <p>Precio: $20</p>
+            <button class="add-to-cart" data-name="Producto 9" data-price="20">Agregar al carrito</button>
+        </div>
+    </div>
+
+    
+
+    <h2>Carrito de Compras</h2>
+    <div class="cart">
+        <table id="cart-items">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <p id="cart-total">Total: $0</p>
+        <button id="checkout" class="checkout">Finalizar Compra</button>
+    </div>
+
+    <p id="confirmation-message"></p>
+
+
+
+    <footer>
+        <div class="footer-container" id="contactos">
+            <div class="footer-info">
+                <h3>Información</h3>
+                <p>Carrera 32 # 29-20, La Pintada, Colombia 055060</p>
+                <p>Teléfono: (+57) 320 7738713</p>
+                <p>Eníos a todo el país</p>
+                <p>&copy; Tienda Virtual de SNG STORE</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com/VanegasLon?locale=es_LA" class="social-icon"><img src="face.PNG" alt="Facebook"></a>
+                <a href="https://www.instagram.com/sng_store11/" class="social-icon"><img src="insta.PNG" alt="Instagram"></a>
+                
+            </div>
+            <div class="footer-otro">
+                <h3>Otras redes</h3>
+                <a href="https://www.instagram.com/sng_deportes/" class="social-icon"><img src="logo2.PNG" alt=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+
+            <div class="footer-logo">
+                <a href="footer_logo.PNG"><img src="footer_logo.PNG" alt="Logo de la Tienda"></a>
+            </div>
+        </div>
+
+        
+    </footer>
+    <script src="prueba.js"></script>
+</body>
+</html>
