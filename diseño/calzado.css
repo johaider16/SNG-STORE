@@ -91,123 +91,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Sección de bienvenida con imagen de fondo */
-.bienvenida {
-    background-image: url('portada.PNG'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* La imagen cubrirá toda la sección */
-    background-position: center; /* Centrar la imagen de fondo */
-    background-repeat: no-repeat; /* Evitar que la imagen se repita */
-    position: relative; /* Permite usar la superposición del fondo */
-    text-align: center;
-    height: 100vh; /* Ocupa toda la pantalla */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Superposición transparente */
-.bienvenida::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
-    z-index: 1; /* Aparece por encima de la imagen */
-}
-
-.bienvenida h1, .bienvenida p {
-    position: relative; /* Se asegura que el texto esté por encima del fondo */
-    z-index: 2; /* Coloca el texto sobre la superposición */
-    color: white; /* Color blanco para el texto */
-}
-
-.bienvenida h1 {
-    font-size: 72px; /* Texto grande */
-    margin: 0;
-    font-weight: bold;
-}
-
-.bienvenida p {
-    font-size: 36px; /* Texto grande */
-    margin: 20px 0;
-    color: #ccc; /* Texto gris claro */
-}
-
-.products {
-    justify-content: space-around;
-    margin-bottom: 20px;
-    display: flex;
-}
-
-.product {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    margin: 20px;
-}
-
-.add-to-cart {
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.cart {
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-}
-
-#cart-total {
-    text-align: right;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.remove-item {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.checkout {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin-left: auto;
-}
-
-#confirmation-message {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 20px;
-    color: green;
-}
 
 /* Estilos para el footer */
 footer {
@@ -291,19 +174,97 @@ footer {
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    
+}
 
+h1, h2 {
+    text-align: center;
+}
 
+.products {
+    justify-content: space-around;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#cart-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.remove-item {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.checkout {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+}
+
+#confirmation-message {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: green;
+}
+
+.titulo{
+    text-align: left;
+}
 .footer-logo img{
     width: 100px;
     margin: 20px 0px 0 100px;
     
 }
 
-.titulo{
-    text-align: left;
-}
-
-.imagenes{
-    width: 190px;
-    height: 200px;
-}
