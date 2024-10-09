@@ -261,3 +261,35 @@ th, td {
     margin: 20px 0px 0 100px;
     
 }
+
+
+/* Responsive para pantallas muy pequeñas (max-width: 480px) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 80px; /* Reducir el tamaño del logo en pantallas muy pequeñas */
+    }
+
+    
+    .products {
+        flex-direction: column; /* Los productos estarán uno debajo del otro */
+        align-items: center; /* Centrar los productos */
+    }
+
+    .product {
+        width: 100%; /* Asegurarse de que ocupen todo el ancho disponible */
+        margin-bottom: 20px; /* Añadir un margen inferior para separar los productos */
+    }
+
+    .bienvenida h1 {
+        font-size: 36px; /* Ajuste del título para pantallas muy pequeñas */
+    }
+
+    .bienvenida p {
+        font-size: 18px; /* Ajuste del párrafo para pantallas muy pequeñas */
+    }
+}
