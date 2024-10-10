@@ -318,6 +318,15 @@ footer {
         align-items: center;
     }
 
+    nav ul {
+        margin: auto;
+        display: block;
+    }
+    nav ul li{
+        padding: 10px;
+        width: 80px;
+    }
+
     .logo img {
         width: 80px; /* Reducir el tamaño del logo en pantallas muy pequeñas */
     }
@@ -339,5 +348,10 @@ footer {
 
     .bienvenida p {
         font-size: 18px; /* Ajuste del párrafo para pantallas muy pequeñas */
+    }
+
+    .cart table thead tr th{
+        
+        padding: 1px;
     }
 }
