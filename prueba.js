@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', function () {
+
+            alert("Se agregó al carrito.!!")
+
             const name = this.getAttribute('data-name');
             const price = parseFloat(this.getAttribute('data-price'));
 

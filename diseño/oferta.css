@@ -213,3 +213,115 @@ footer {
     background-color: black;
     cursor: pointer;
 }
+
+/*Diseño del boton para el carrito de compras*/
+
+.todo {
+    display: none;
+    position: fixed;
+    top: 190px;
+    left: 380px;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    background-color: #fff;
+    border: 2px solid black;
+    
+}
+
+.todo1{
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid  black;
+    width: 80%;
+    max-width: 600px;
+}
+
+.cierre{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cierre:hover, .cierre:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart {
+    margin-top: 20px;
+  }
+  
+  #checkout {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #checkout:hover {
+    background-color: #0056b3;
+  }
+
+
+  @media (max-width: 600px) {
+    .cart table thead tr th{
+        
+        padding: 1px;
+    }
+
+    .todo{
+        top: 190px;
+        left: 40px;
+        padding: 10px 90px 0 50px;
+    }
+    .cart{
+        padding: 0px 70px 0 0px;
+        left: 0;
+        
+    }
+
+  }
+
+
+
+  @media (max-width: 350px) {
+    .todo{
+        top: 300px;
+        left: 10px;
+    }
+
+    .cart{
+        padding: 10px 200px 20px 20px;
+        background-color: #0056b3;
+        float: left;
+    }
+    
+    #cart-items{
+        justify-items: left;
+        background-color: red;
+        
+    }
+
+    .cierre{
+        margin: 0px;
+        background-color: black;
+    }
+
+    #cart-items thead tr th{
+        
+        text-align: left;
+    }
+
+    .producto{
+        background-color: #fff;
+        left: 0;
+        top: 50px;
+    }
+
+  }

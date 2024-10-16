@@ -440,11 +440,50 @@ footer {
     .todo{
         top: 190px;
         left: 40px;
-        padding: 10px 130px 0 60px;
+        padding: 10px 90px 0 50px;
     }
     .cart{
-        padding: 0px 130px 0 25px;
+        padding: 0px 70px 0 0px;
+        left: 0;
+        
     }
 
   }
 
+
+
+  @media (max-width: 350px) {
+    .todo{
+        top: 300px;
+        left: 10px;
+    }
+
+    .cart{
+        padding: 10px 200px 20px 20px;
+        background-color: #0056b3;
+        float: left;
+    }
+    
+    #cart-items{
+        justify-items: left;
+        background-color: red;
+        
+    }
+
+    .cierre{
+        margin: 0px;
+        background-color: black;
+    }
+
+    #cart-items thead tr th{
+        
+        text-align: left;
+    }
+
+    .producto{
+        background-color: #fff;
+        left: 0;
+        top: 50px;
+    }
+
+  }
