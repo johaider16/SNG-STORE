@@ -141,6 +141,11 @@ footer {
     height: 24px;
 }
 
+.footer-logo img{
+    width: 100px;
+    margin: 20px 0px 0 100px;
+    
+}
 /* Ajustes responsivos */
 @media (max-width: 768px) {
     nav {
